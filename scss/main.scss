@@ -1,0 +1,102 @@
+@import "bits";
+
+body {
+	background-color: $corduroy;
+	color: $very-light-gray;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+	&:visited,
+	&:hover {
+		color: inherit;
+	}
+}
+.site-header {
+	background-color: $woodsmoke;
+}
+
+.site-title {
+	float: left;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin: 2rem 2em 2rem 1.5em;
+	text-transform: uppercase;
+	a {
+		color: #fff;
+	}
+}
+
+.main-navigation {
+	@extend %clearfix;
+	clear: none;
+	width: auto;
+	.menu-item {
+		color: $dark-gray;
+		font-weight: bold;
+		font-size: 0.8em;
+		float: left;
+		letter-spacing: 2px;
+		margin: 2.1rem 1.5em 2rem 0;
+		text-transform: uppercase;
+		&.current-menu-item {
+			color: #fff;
+		}
+		a:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
+
+.site-content {
+	padding: 2em 4.5rem 1em;
+}
+
+#primary {
+	@media (min-width: 700px) {
+		float: left;
+		width: 75%;
+	}
+}
+
+#secondary {
+	@media (min-width: 700px) {
+		float: left;
+		margin-left: 5%;
+		width: 20%;
+	}
+}
+
+.entry-title {
+	color: #fff;
+	font-size: 1.2em;
+}
+.entry-meta {
+	color: $dark-gray;
+	font-style: italic;
+}
+
+.entry-footer {
+	.edit-link {
+		margin-left: 1em;
+	}
+}
+
+.site-footer {
+	text-align: center;
+}
+
+.widget-title {
+	color: #fff;
+	font-size: 1.3em;
+}
+.mailchimp-signup {
+	label {
+		font-weight: normal;
+	}
+}

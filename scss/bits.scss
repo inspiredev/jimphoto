@@ -1,0 +1,14 @@
+// Colors
+$dark-gray: #acacac;
+$very-light-gray: #cacaca;
+$woodsmoke: #282a29;
+$corduroy: #3c3e3d;
+
+
+%clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
